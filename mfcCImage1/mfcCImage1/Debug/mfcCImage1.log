@@ -1,0 +1,4 @@
+﻿  mfcCImage1Dlg.cpp
+mfcCImage1Dlg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+  mfcCImage1.vcxproj -> C:\MyProject\mfcStudy\mfcCImage1\Debug\mfcCImage1.exe
+  mfcCImage1.vcxproj -> C:\MyProject\mfcStudy\mfcCImage1\Debug\mfcCImage1.pdb (Partial PDB)
