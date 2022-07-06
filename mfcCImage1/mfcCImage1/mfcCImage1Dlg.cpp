@@ -316,7 +316,8 @@ void CmfcCImage1Dlg::moveCircle()
 	int nWidth = m_image.GetWidth();
 	int nHeight = m_image.GetHeight();
 	int nPitch = m_image.GetPitch();
-	int nRadius = 10;                         // 원의 반지름
+
+	int nRadius = 30;                         // 원의 반지름
 
 	unsigned char* fm = (unsigned char*)m_image.GetBits();   // GetBits  = 지정된 픽셀의 실제 비트 값에 대한 포인터를 검색. 
 															 //            ( m_image의 첫번째 포인터를 가지고 옴 )
@@ -335,7 +336,8 @@ void CmfcCImage1Dlg::moveCircle()
 
 void CmfcCImage1Dlg::drawCircle(unsigned char* fm, int x, int y, int nRadius, int nColor) // 원그리기
 {                            //        주소 포인트,                 반지름
-	int nCenterX = x + nRadius;
+
+	int nCenterX = x + nRadius;                     
 	int nCenterY = y + nRadius;
 	int nPitch = m_image.GetPitch();
 
@@ -350,7 +352,7 @@ void CmfcCImage1Dlg::drawCircle(unsigned char* fm, int x, int y, int nRadius, in
 
 void CmfcCImage1Dlg::OnBnClickedBtnAction2()
 {
-	for (int i = 0; i < 640; i++) {
+	for (int i = 0; i < 1; i++) {
 		moveCircle();
 		Sleep(10);  // Sleep(); = 딜레이함수
 					// ex) Sleep(1000); = 1000ms로 1초를 의미한다.   

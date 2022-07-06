@@ -27,6 +27,8 @@ public:  //퍼블릭   외부에서 억세스 사용 가능
 // 구현입니다.
 protected:
 	HICON m_hIcon;
+	//int m_nCenterX;
+	//int m_nCenterY;
 
 	// 생성된 메시지 맵 함수
 	virtual BOOL OnInitDialog();
